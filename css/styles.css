@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+header{
+    background-color: blue;
+    size: 10px;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+.headerLinks:hover{
+    color: white;
+    font-size: 20px;
+}
+
+.logo{
+    width: 60px;
+}
+
+.logo:hover{
+    width: 65px;
+}
+
+nav{
+    text-align: center; 
+    margin: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
+
+.redes{
+    display: flex;
+    width: 20px;
+   
+    text-align: center;
+}
+
+main{
+    background-color: whitesmoke;
+}
+
+h2{
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+/* HOME */
+
+.noticias{
+    width: 90%;
+    height: auto;
+    border: 5px solid black;
+    margin: 50px;
+}
+
+/*  FIN HOME */
+
+/*FORMULARIO*/
+
+form{
+    border: 4px solid black;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+label{
+    margin-left: 20px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 90%; 
+    padding: 10px;
+    border: 2px solid grey;
+}
+
+.botones{
+    color: rgba(105, 105, 105, 0.836);
+    border: 1px solid black;
+    width: 100px;
+    border-radius: 8px;
+}
+
+.botones:hover{
+    width: 120px;
+}
+
+/*FIN FORMULARIO*/
+
+/* PLANTEL */
+
+.arqueros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.defensores{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mediocampistas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.delanteros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.padreFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.plantelPos{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.fotoJugador{
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/*FIN PLANTEL*/
+
+/* HISTORIA */
+
+.imgHistoria{
+    display: block;
+    width: 800px;
+    height: 500px;
+    margin: 40px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.historiaLorem{
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+/* FIN HISTORIA */
+
+/* BOCA SHOP */
+
+.contenedorProductos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+.productoImagen{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.productoTitulo{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.productoPrecio{
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.productoBtn{
+    padding: 10px 20px;
+    background-color: rgb(17, 179, 17);
+    color: #fafafa;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.productoBtn:hover{
+    width: 160px;
+    height: 35px;
+}
+
+
+/* FIN BOCA SHOP */
+
+/* VISTA MOBILE */
+
+@media (max-width: 320px){
+
+    /* PLANTEL */
+
+    .arqueros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .defensores{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mediocampistas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .delanteros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotoJugador{
+        width: 270px;
+    }
+
+    /* HOME */
+
+    .noticias{
+        width: 270px;
+        display: flex;
+        align-items: center;
+        margin: 30px;
+    }
+
+    /* HISTORIA */
+
+    .imgHistoria{
+        width: 300px;
+        height: 200px;
+    }
+
+    .historiaLorem{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
